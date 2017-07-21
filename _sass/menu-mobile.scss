@@ -1,0 +1,231 @@
+.menu-mobile{
+    background-color: #ffffff;
+    color: #000000;
+    bottom: 0;
+    right: -300px;
+    display: none;
+    top: 65px;
+    width: 213px;
+    height: 180px;
+    z-index: 100;
+    transition: all 300ms ease;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+           
+           
+            @media (max-width: 2560px) and (min-width: 768px) {
+           display: none;
+           position: inherit;
+           font-size: 16px;
+           margin-right: -17px;
+           }
+
+        
+    
+    li{
+        
+    }
+    
+    a{
+        color: #000000;
+        display: block;
+        padding: 0px 0px;
+    }
+}
+
+
+.menu-open .menu-mobile{
+    display: block;
+    right: 0;
+    position: fixed;
+}
+
+
+
+.hamburguer {
+    cursor: pointer;
+    display: none;
+    height: 30px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    transition: all .2s ease-out;
+    z-index: 10;
+    
+    @media (max-width: $xs){
+        display: block;
+    }
+    
+    .hamburguer-stripe {
+        width: 100%;
+        height: 3px;
+        background: white;
+        margin: 4px auto;
+        transition: all 0.3s;
+        backface-visibility: hidden;
+    }
+    
+    &.on{
+        
+        .hamburguer-top {
+            transform: rotate(45deg) translate(6px, 6px);
+        }
+    
+        .hamburguer-middle {
+            opacity: 0;
+        }
+        
+        .hamburguer-bottom {
+            transform: rotate(-45deg) translate(7px, -7px);
+        }
+    }
+}
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    color: #000000;
+    min-width: 270px;
+    box-shadow: 0px 16px 16px 0px rgba(0,0,0,0.2);
+    padding: 5px 10px 5px;
+    z-index: 1;
+
+    a{
+        color: #000000;
+    }    
+    
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+.mb-0 {
+   text-align: left; 
+}
+.card-block {
+    padding: 0px 5px 5px 5px;
+    margin-left: 0px;
+    text-align: left;
+}
+
+.card-header {
+    padding: -4.25rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #f7f7f9;
+}
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul { list-style-type: none; 
+}
+
+a {
+  color: #b63b4d;
+  text-decoration: none;
+}
+
+.accordion {
+  width: 100%;
+   width: 213px;
+    height: 180px;
+  margin: 0px -16px 0px;
+  background: #FFF;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.accordion .link {
+    cursor: pointer;
+    display: block;
+    padding: 9px 14px 7px 40px;
+    color: #000000;
+    font-size: 13px;
+    font-weight: 700;
+    border-bottom: 1px solid #CCC;
+    position: relative;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+
+}
+
+.accordion li:last-child .link { border-bottom: -1px; }
+
+.accordion li i {
+  position: absolute;
+  top: 16px;
+  left: 12px;
+  font-size: 18px;
+  color: #595959;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.accordion li i.fa-chevron-down {
+  color: blue;
+  right: 12px;
+  left: auto;
+  font-size: 16px;
+}
+
+.accordion li.open .link { color: #000000; }
+
+.accordion li.open i { color: #000000; }
+
+.accordion li.open i.fa-chevron-down {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.submenu {
+  display: none;
+  background: #ffffff;
+  font-size: 13px;
+}
+
+.submenu li { border-bottom: 1px solid #CCC; }
+
+.submenu a {
+  font-weight: bold;
+  display: block;
+  text-decoration: none;
+  color: blue;
+  padding: 10px;
+  padding-left: 42px;
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.submenu a:hover {
+  font-weight: bold;
+  text-decoration: none;
+  color: blue;
+}

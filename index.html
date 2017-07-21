@@ -1,17 +1,117 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        
-        <title>
-        
-            João Daniel &middot;
-        
-        </title>
+---
+layout: home
+title: home
+permalink: /
+---
 
-       
-    </head>
+<div class="home-slider">
+    <ul>
+         
+        <!-- <li>
+            <img data-lazy="img/site8.jpg">
+        </li>
+        <li>
+            <img data-lazy="img/site3.jpg">
+        </li>
+         <li>
+            <img data-lazy="img/site8.jpg">
+        </li>
+         <li>
+            <img data-lazy="img/site4.jpg">
+        </li>
+         <li>
+            <img data-lazy="img/site8.jpg">
+        </li>
+         <li>
+            <img data-lazy="img/site5.jpg">
+        </li>
+         <li>
+            <img data-lazy="img/site8.jpg">
+        </li>
+         <li>
+            <img data-lazy="img/site1.jpg">
+        </li>
+         <li>
+            <img data-lazy="img/site8.jpg">
+        </li>
+         <li>
+            <img data-lazy="img/site2.jpg">
+        </li>
+         <li>
+            <img data-lazy="img/site8.jpg">
+        </li>
+         <li>
+            <img data-lazy="img/site7.jpg">
+        </li>-->
+    </ul>
+</div>
+
+<div class="container">
     
-    <body>
-       <p>HELLOW WORLD</p>
-    </body>
-</html>
+    <!--<div class="row home-features">
+        
+          <div class="col-sm-4">
+            <div class="box-feature">
+                <i>
+                    <img src="/img/calendarios.png" width="700" height="60">
+                </i>
+                <br>
+                <p>Calendário de Provas</p>
+                <center><a href="/pdf/calendario/calendário provasef1.pdf" class="btn" target="_blank">EF1</a>&nbsp
+                 <a href="/pdf/calendario/calendário provasef2.pdf" class="btn" target="_blank">EF2</a>&nbsp
+                 <a href="/pdf/calendario/calendário provasem.pdf" class="btn" target="_blank">EM</a>&nbsp
+                 <a href="/pdf/calendario/calendário provaspv.pdf" class="btn" target="_blank">PV</a></center>
+            </div>
+        </div>
+        
+        
+          <div class="col-sm-4">
+            <div class="box-feature">
+                <i>
+                    <img src="/img/livro.jpg" width="700" height="60">
+                </i>
+                <br>
+                <p>Orientações para as provas</p>
+                 <center><a href="/orientacao/index.html" class="btn">EF1</a>&nbsp
+                 <a href="/orientacao/ef2.html" class="btn">EF2</a>&nbsp
+                 <a href="/orientacao/em.html" class="btn">EM</a>&nbsp
+                 <a href="/pdf/orientacao/pv.pdf" target="_blank" class="btn">PV</a>&nbsp</center>
+              
+            </div>
+        </div>
+        
+        
+        <div class="col-sm-4">
+            <div class="box-feature">
+                <i>
+                    <img src="/img/gabaritos.png" width="700" height="60">
+                </i>
+                <br>
+              <center><p>GABARITOS E RESOLUÇÕES</p>
+          
+                <a href="/area-aluno" class="btn"> < CLIQUE AQUI > </a>
+
+                 </center>
+            </div>
+        </div>
+        
+      
+        
+      
+        
+    </div>-->
+</div>
+
+
+
+<div class="container">
+    <div class="between-sections row">
+        <h2 class="home-title">Últimas do Blog</h2>
+        <div style="font-weight:bold">
+            {% for post in site.posts limit:4 %}
+                <a href="{{ post.url | prepend: site.baseurl }}" class="post-title">{{ post.title }}<b></b></a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+

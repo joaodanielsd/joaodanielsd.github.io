@@ -1,0 +1,21 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+// Imports
+@import "bootstrap";
+@import "base";
+
+@import "header";
+@import "footer";
+@import "blog";
+@import "fotos";
+@import "home";
+@import "sobre";
+@import "contact";
+@import "area-aluno";
+@import "menu-mobile";
+@import "text-home";
+
+@import "social";
+@import "fotos-antigas";

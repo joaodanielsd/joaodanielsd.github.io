@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        
+        <title>
+        {% if page.title == "home" %}
+            {{ site.title }} &middot; {{ site.tagline }}
+        {% else %}
+            {{ page.title }} &middot; {{ site.title }}
+        {% endif %}
+        </title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <link href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+        <link href="/css/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> 
+    </head>
+    
+    <body>
+        {% include icons.html %}
+        {% include header.html %}
+        {{ content }}
+        {% include footer.html %}
+        {% include menu-mobile.html %}
+        
+        <script src="/js/jquery-3.1.1.min.js"></script>
+        <script src="/js/pwi.js"></script>
+        <script src="/js/slick.js"></script>
+        <script src="/js/scripts.js"></script>
+    </body>
+</html>

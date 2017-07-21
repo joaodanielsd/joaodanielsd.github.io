@@ -1,0 +1,10 @@
+---
+layout: default
+---
+
+<div class="post-container container">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p>Por {{ page.author }} em {{ page.date | date: "%d/%m/%Y" }}</p>
+    <p>{{ content }}</p>
+    <a href="{{ site.baseurl }}/blog" class="btn">Voltar ao blog</a>
+</div>
