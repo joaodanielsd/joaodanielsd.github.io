@@ -19,7 +19,7 @@ email: your-email@domain.com
 description: T.I.
 tagline: Web Designer
 baseurl: "/blog" # the subpath of your site, e.g. /blog
-url: "https://jdsd-joaodaniel.c9users.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://jdsd.com.br/" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
