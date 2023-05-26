@@ -1,0 +1,36 @@
+
+.home{
+  
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5rem 2rem;
+  height: 85vh;
+}
+  .subtitle{
+    font-size: 2.2rem;
+    text-align: center;
+    }
+
+.img-home{
+    width: 300px;
+}
+
+.social {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    padding: 1rem;
+}
+.social a {
+    color: var(--social-color);
+    font-size: 1.5rem;
+  }
+  .social a:hover {
+    color: var(--social-hover);
+  }
+.social li{
+    margin-left: 20px;
+}
