@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="./css/main.css">
+     <link rel="stylesheet" href="./css/style.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!--<link rel="stylesheet" href="./css/bootstrap.min.css">-->
+        <script src="./js/menu.js" defer></script>
+        <script src="./js/dark.js" defer></script>
+        <script src="./js/captcha.js" defer></script>
+        
+        
+    <title>Portifolio Pessoal JD</title>
+</head>
+    <body>
+           <header class="top-navbar">
+                <label for="switch"><input type="checkbox" id="switch">Dark Mode</label>
+                <nav class="navbar navbar-light bg-light">
+                <div class="fil0"><a href="index.html"><img src="/img/logo.svg"></a>
+                </div>
+                    <nav id="nav"><button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu<span class="hamburger"></span></button>
+                        <div>
+                            <ul class="navbar-nav" aria-expanded>
+                                <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#project">Projetos</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </nav>
+            </header>
+            <main>
+                <section id="home" class="home">
+                        <img src="img/2.svg" class="img-home">
+                        <div>
+                            <h1>João Daniel</h1>
+                            <p class="subtitle">Front-end developer and Web Designer</p>
+                            <ul class="social">
+                              <li><a href="https://www.linkedin.com/in/jo%C3%A3o-daniel-santos-dias-68a9087a" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+                              <li><a href="https://www.instagram.com/joao.daniel.jdsd/" target="_blank"><i class="bi bi-instagram"></i></a></li>
+                              <li><a href="https://github.com/joaodanielsd" target="_blank"><i class="bi bi-github"></i></a></li>
+                              <li><a href="bit.ly/426pejf" target="_blank"><i class="bi bi-whatsapp"></i></a></li>
+                            </ul>
+                          </div>
+                </section>
+
+                <a href="#about" id="arrow-down"><i class="bi bi-arrow-down-circle-fill"></i></a>
+   
+
+                <section id="about">
+                    <div id="about-me-description">
+                    <div class="about-me">
+                        <h2 class="about-me-title">Quem sou eu?</h2>
+                        <p class="about-me-subtitle">Eu sou João Daniel, desenvolvedor web front-end e faço alguns marketings digitais.<br>
+                            Desenvolvo páginas estáticas com layouts modernos que proporcionam ótimas experiências aos usuários.<br>
+                            Crio post para as midias digitais, cartaz, entre outros.
+                        </p>
+                    </div>
+                    <img src="img/perfil.jpg" alt="João Daniel" class="about-me-img">
+                    </div>
+
+                    <div class="about-me-langs">
+                    <h3 class="about-me-langs-title">Linguagens que utilizo e ferramentas</h3>
+                    <div class="about-me-langs-list">
+                        <div class="container">
+                            <div class="progess" style="--i:90;--clr:#43f94a;">
+                                <h3>90<span>%</span></h3>
+                                <h4>HTML</h4>
+                                </div>
+                                <div class="progess" style="--i:62;--clr:#2CCDE9;">
+                                    <h3>62<span>%</span></h3>
+                                    <h4>SCSS</h4>
+                                </div>
+                                <div class="progess less" style="--i:35;--clr:#FB297B;">
+                                    <h3>35<span>%</span></h3>
+                                    <h4>JS</h4>
+                                </div>
+                                <div class="progess" style="--i:85;--clr:#ffe047;">
+                                    <h3>78<span>%</span></h3>
+                                    <h4>Photoshop</h4>
+                                </div>
+                                <div class="progess" style="--i:80;--clr:#c914e0;">
+                                    <h3>80<span>%</span></h3>
+                                    <h4>CorelDrawn</h4>
+                                </div>
+                        </div>
+                    </div>
+                    </div>
+                    
+                </section>
+
+                
+                
+                <section id="project">
+                </section>
+
+                <a href="#project" id="arrow-down"><i class="bi bi-arrow-down-circle-fill"></i></a>
+              
+                <section id="contact" class="contact">
+                    
+                    <form id="form" class="form" action="https://formsubmit.co/joao_daniel_jd@yahoo.com.br"
+                        method="POST">
+                            <div class="form-control">
+                            <label for="name">Nome</label>
+                            <input
+                                type="text"
+                                id="name"
+                                placeholder="Digite seu nome completo..." required
+                            />
+                            </div>
+        
+                            <div class="form-control">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Digite seu email.." required/>
+                            <!--<i class="fas fa-exclamation-circle"></i>
+                            <i class="fas fa-check-circle"></i>
+                            <small>Mensagem de erro</small>-->
+                            </div>
+        
+                            <div class="form-control">
+                            <label for="telefone">Telefone:</label>
+                            <input
+                                type="tel"
+                                id="telefone"
+                                placeholder="(XX) XXXX-XXXX"
+                            />
+                            </div>
+        
+                        <div class="form-control">
+                            <label for="textarea" >Mensagem</label>
+                            <textarea id="textarea"  placeholder="Digite sua mensagem..." required></textarea>
+                        
+                        <div id="captchaBackground">
+                                <canvas id="captcha">captcha text</canvas>
+                                <input id="textBox" type="text" name="text" required>
+                                    <button id="refreshButton" type="submit">Refresh</button>
+                        
+                                <span id="output"></span>
+                        </div>
+                            <input
+                                type="hidden"
+                                name="_next"
+                                value="index.html"
+                            />
+                            <input type="hidden" name="_captcha" value="false">
+                            <button type="submit" id="submitButton">Enviar</button>
+                        </div>
+                    </form>    
+
+                </section>
+      
+                <footer class="footer-distributed">
+         
+                    <div class="footer-left">
+         
+                        <h3>DEV<span>FRONT-END</span></h3>
+         
+                        <p class="footer-links">
+                            <a href="#home">Home</a>
+                            ·
+                            <a href="#">Sobre</a>
+                            ·
+                            <a href="#">Projetos</a>
+                            ·
+                            <a href="#">Contato</a>
+                        </p>
+         
+                        <p class="footer-company-name">Dev Front-end &copy; 2023</p>
+                    </div>
+         
+                    <div class="footer-center">
+         
+                        <div>
+                            <i class="fa fa-map-marker"></i>
+                            <p><span>Rua Luiz Gonzaga Falcão Neto</span> Garça, SP</p>
+                        </div>
+         
+                        <div>
+                            <i class="fa fa-phone"></i>
+                            <p>+55 (14) 99122-0856</p>
+                        </div>
+         
+                        <div>
+                            <i class="fa fa-envelope"></i>
+                            <p><a href="mailto:joao_daniel_jd@yahoo.com.br">joao_daniel_jd@yahoo.com.br</a></p>
+                        </div>
+         
+                    </div>
+         
+                    <div class="footer-right">
+         
+                        <p class="footer-company-about">
+                            <span>Sobre a empresa</span>
+                            Desenvolvo páginas estáticas com layouts modernos que proporcionam ótimas experiências aos usuários.<br>
+                            Crio post para as midias digitais, cartaz, entre outros.
+                        </p>
+         
+                        <div class="footer-icons">
+                            <li><a href="https://www.linkedin.com/in/jo%C3%A3o-daniel-santos-dias-68a9087a" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+                            <li><a href="https://www.instagram.com/joao.daniel.jdsd/" target="_blank"><i class="bi bi-instagram"></i></a></li>
+                            <li><a href="https://github.com/joaodanielsd" target="_blank"><i class="bi bi-github"></i></a></li>
+                            <li><a href="bit.ly/426pejf" target="_blank"><i class="bi bi-whatsapp"></i></a></li>
+                        </div>
+         
+                    </div>
+                </footer>
+         </main>
+    </body>
+</html>
