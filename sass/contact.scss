@@ -17,7 +17,7 @@
     position: relative;
   }
   
-  .form-control .message {
+.message{
     color: var(--button-color);
     display: inline-block;
     margin-bottom: 5px;
@@ -31,6 +31,8 @@
     color: var(--button-color);
     display: inline-block;
     margin-bottom: 5px;
+    right: 0;
+    top: 0;
   }
   
   .form-control textarea {
