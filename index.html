@@ -105,21 +105,22 @@
                     
                     <form id="form" class="form" action="https://formsubmit.co/joao_daniel_jd@yahoo.com.br"
                         method="POST">
-                        <div>
+                        <div class="form-control">
                             <label for="nome">Nome</label>
-                            <input type="text" name="nome" required>
+                            <input type="text" name="nome" placeholder="Digite seu nome completo..." required/>
                         </div>
-                        <div>
+                        <div class="form-control">
                             <label for="email">E-mail</label>
-                            <input type="email" name="email" required>
+                            <input type="email" name="email" placeholder="Digite seu email.." required/>
                         </div>
-                        <div>
+                        <div class="form-control">
                             <label for="message">Mensagem</label>
-                            <input type="text" id="message" name="message" required>
+                            <textarea id="textarea"  placeholder="Digite sua mensagem..." required></textarea>
                         </div>
                         <button type="submit">Enviar</button>
                         <input type="hidden" name="_next" value="https://joaodanielsd.github.io">
                         <input type="hidden" name="_subject" value="New submission!">
+                        
 
                             <!--<div class="form-control">
                             <label for="name">Nome</label>
