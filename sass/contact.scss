@@ -11,6 +11,17 @@
     width: 20%;
   }
   
+  
+input#message {
+  color: var(--button-color);
+  display: inline-block;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  font-size: 14px;
+  width: 100%;
+  height:150px;
+  padding: 10px;
+}
   .form-control {
     margin-bottom: 10px;
     padding-bottom: 20px;
@@ -22,16 +33,14 @@
     display: inline-block;
     margin-bottom: 5px;
   }
-
   
-  .form-control .message {
+  .form-control textarea {
     
     display: inline-block;
     margin-bottom: 5px;
-
   }
   
-  .message{
+  textarea{
     border-radius: 10px;
     font-size: 14px;
     width: 100%;
