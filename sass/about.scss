@@ -25,15 +25,18 @@
 }
 */
 .about{
-  height:80vh;
-  padding-top: 115px;
+  @media (max-width: 425px) {
+ 
+    width: 200%;
+    
+    }
 }
 #about-me-description{
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10%;
-  height: 60vh;
+  height: 35vh;
 }
   .about-me{
     color:var(--link-color);
