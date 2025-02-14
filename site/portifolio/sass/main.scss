@@ -1,0 +1,134 @@
+@import '_header';
+@import 'mobile';
+@import 'home';
+@import 'about';
+@import 'contact';
+@import 'footer';
+
+:root{
+ --body-bg:#FFF;
+ --header-bg: #6c83c5;
+ --p-color: #0079f1;
+ --social-color: #0079f1;
+ --social-hover: #224b70;
+ --link-color: #0079f1;
+ --down-color:#0079f1;
+ --down-colorhover: #224b70;
+ --button-color:#0079f1;
+ --button-colorhover: #224b70;
+ --button-link:#fff;
+ --captcha-color: #fff;
+ --buttonc-bgcolor:#0079f1;
+ --buttonc-color: #fff;
+ --input-color:#0079f1;
+ --footerh3-color: #000;
+ --footera-color:#fff;
+ 
+ }
+
+.dark-mode:root {
+  --body-bg: #212529;
+  --body-color: #899095;
+  --link-color: #dee2e6;
+  --link-color-hover: #3cc368;
+  --header-bg: #001224;
+  --p-color: #fff;
+  --social-color: #fff; 
+  --social-hover: #1f7aca;
+  --down-color:#ffffff;
+  --down-colorhover: #1f7aca;
+  --button-color:#ffffff;
+  --button-colorhover: #1f7aca;
+  --button-link:#444;
+  --captcha-color: #fff;
+  --buttonc-bgcolor:#0079f1;
+  --buttonc-color: #fff;
+  --input-color:#0079f1;
+  --footerh3-color: #0079f1;
+  --footera-color:#fff;
+}
+html{
+   scroll-behavior: smooth;
+}
+body{
+    background-color: var(--body-bg);
+    color: var(--link-color);
+ }
+
+ a{
+    color: var(--link-color);
+ }
+ header{
+    background-color: var(--header-bg);
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+}
+ 
+#arrow-down{
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 2rem;
+color: var(--down-color);
+cursor: pointer;
+animation-name: down;
+ animation-duration: 1s;
+ animation-delay: 0s;
+ animation-iteration-count: infinite;
+ animation-direction: alternate;
+
+}
+
+@keyframes down{
+   0%,to {
+       transform: translateY(-25%);
+       animation-timing-function: cubic-bezier(.8,0,1,1)
+   }
+
+   50% {
+       transform: none;
+       animation-timing-function: cubic-bezier(0,0,.2,1)
+   }
+  
+ }
+#arrow-down:hover{
+  color: var(--down-colorhover);
+}
+header .top-navbar .bg-light{
+    background: var(--body-bg);
+ }
+ input{
+    margin: 5px;
+ }
+ label{
+    position: initial;
+    color: #FFF;
+    top: 25px;
+    right: 450px;
+
+    @media(max-width: 668px){
+        right: 400px;
+    }
+
+
+    @media(max-width: 600px){
+        display: block;
+        right: 150px;
+    }
+
+    @media(max-width: 320px){
+        display: block;
+        right: 108px;
+    }
+ }
+p{
+      color: var(--p-color);
+}
+
+h1{
+   color: var(--p-color);
+   text-align: center;
+   font-size: 60px;
+   font-family: Arial, Helvetica, sans-serif;
+}
