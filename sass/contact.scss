@@ -38,20 +38,6 @@
     position: relative;
   }
   
-.message{
-    color: var(--button-color);
-    position: relative;
-    display: inline-block;
-    margin-bottom: 5px;
-    border-radius: 10px;
-    font-size: 14px;
-    width: 100%;
-    height:150px;
-    padding: 10px;
-    border: 2px solid var(--button-color);
-
-  
-  }
   .form-control label {
     color: var(--button-color);
     display: inline-block;
@@ -91,6 +77,12 @@
     padding: 10px;
 
   }
+
+  input#message {
+    height: 150px;
+    padding: 0px 10px 110px;
+}
+
   
   .form-control i {
     position: absolute;
