@@ -172,6 +172,10 @@
   box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.12);
 }
 
+.dark {
+  position: absolute;
+}
+
 nav {
   text-align: -webkit-right;
 }
@@ -269,6 +273,11 @@ nav {
   padding: 5rem 2rem;
   height: 85vh;
 }
+@media (max-width: 425px) {
+  .home {
+    width: 200%;
+  }
+}
 
 .subtitle {
   font-size: 2.2rem;
@@ -326,9 +335,10 @@ nav {
     border-radius: 50%;
 }
 */
-.about {
-  height: 80vh;
-  padding-top: 115px;
+@media (max-width: 425px) {
+  .about {
+    width: 200%;
+  }
 }
 
 #about-me-description {
@@ -336,7 +346,7 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 10%;
-  height: 60vh;
+  height: 35vh;
 }
 
 .about-me {
@@ -494,10 +504,32 @@ svg {
   justify-content: center;
   overflow: hidden;
 }
+@media (max-width: 425px) {
+  .contact {
+    display: block;
+    width: 100%;
+    text-align: -webkit-center;
+  }
+}
+@media (max-width: 425px) {
+  .contact {
+    width: 200%;
+  }
+}
 
 .form {
   padding: 20px;
-  width: 20%;
+  width: 30%;
+}
+@media (max-width: 768px) {
+  .form {
+    width: 50%;
+  }
+}
+@media (max-width: 425px) {
+  .form {
+    width: 90%;
+  }
 }
 
 .form-control {
@@ -506,10 +538,24 @@ svg {
   position: relative;
 }
 
+.message {
+  color: var(--button-color);
+  position: relative;
+  display: inline-block;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  font-size: 14px;
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  border: 2px solid var(--button-color);
+}
+
 .form-control label {
   color: var(--button-color);
   display: inline-block;
   margin-bottom: 5px;
+  top: 0;
 }
 
 .form-control textarea {
@@ -779,6 +825,18 @@ footer {
     margin-left: 0;
   }
 }
+@media (max-width: 425px) {
+  .footer-distributed {
+    font: bold 14px sans-serif;
+    width: 200%;
+  }
+}
+@media (max-width: 320px) {
+  .footer-distributed {
+    font: bold 14px sans-serif;
+    width: 200%;
+  }
+}
 :root {
   --body-bg:#FFF;
   --header-bg: #6c83c5;
@@ -878,7 +936,7 @@ input {
 }
 
 label {
-  position: absolute;
+  position: initial;
   color: #FFF;
   top: 25px;
   right: 450px;
