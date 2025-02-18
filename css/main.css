@@ -275,7 +275,9 @@ nav {
 }
 @media (max-width: 425px) {
   .home {
-    width: 200%;
+    padding: 5%;
+    display: block;
+    height: 105vh;
   }
 }
 
@@ -286,6 +288,18 @@ nav {
 
 .img-home {
   width: 300px;
+}
+@media (max-width: 425px) {
+  .img-home {
+    width: 230px;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 375px) {
+  .img-home {
+    width: 100px;
+    margin-top: 71px;
+  }
 }
 
 .social {
@@ -335,18 +349,17 @@ nav {
     border-radius: 50%;
 }
 */
-@media (max-width: 425px) {
-  .about {
-    width: 200%;
-  }
-}
-
 #about-me-description {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10%;
   height: 35vh;
+}
+@media (max-width: 425px) {
+  #about-me-description {
+    height: 0;
+  }
 }
 
 .about-me {
@@ -372,10 +385,27 @@ nav {
   height: 250px;
   border-radius: 50%;
 }
+@media (max-width: 425px) {
+  .about-me-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+}
 
 .about-me-langs {
   margin: 3rem 0;
   text-align-last: center;
+}
+@media (max-width: 425px) {
+  .about-me-langs {
+    margin: 15rem 0;
+  }
+}
+@media (max-width: 375px) {
+  .about-me-langs {
+    margin: 21rem 0;
+  }
 }
 
 .about-me-langs .title {
@@ -401,7 +431,7 @@ i {
 .container {
   position: relative;
   display: flex;
-  margin-top: 30px;
+  margin-top: 15px;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -509,11 +539,6 @@ svg {
     display: block;
     width: 100%;
     text-align: -webkit-center;
-  }
-}
-@media (max-width: 425px) {
-  .contact {
-    width: 200%;
   }
 }
 
@@ -817,18 +842,6 @@ footer {
     margin-left: 0;
   }
 }
-@media (max-width: 425px) {
-  .footer-distributed {
-    font: bold 14px sans-serif;
-    width: 200%;
-  }
-}
-@media (max-width: 320px) {
-  .footer-distributed {
-    font: bold 14px sans-serif;
-    width: 200%;
-  }
-}
 :root {
   --body-bg:#FFF;
   --header-bg: #6c83c5;
@@ -873,11 +886,14 @@ footer {
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
   background-color: var(--body-bg);
   color: var(--link-color);
+  overflow-x: hidden;
+  width: 100%;
 }
 
 a {
@@ -885,8 +901,8 @@ a {
 }
 
 header {
-  background-color: var(--header-bg);
   position: fixed;
+  background-color: var(--header-bg);
   z-index: 9999;
   width: 100%;
 }
@@ -903,6 +919,11 @@ header {
   animation-delay: 0s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+}
+@media (max-width: 425px) {
+  #arrow-down {
+    margin-top: -170px;
+  }
 }
 
 @keyframes down {
@@ -960,6 +981,11 @@ h1 {
   text-align: center;
   font-size: 60px;
   font-family: Arial, Helvetica, sans-serif;
+}
+@media (max-width: 375px) {
+  h1 {
+    font-size: 20px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
